@@ -13,16 +13,16 @@ export default function Navbar() {
             <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-gray-100">
       <Container className="flex items-center justify-between h-16">
         <a href="#" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded bg-indigo-600"></div>
-          <span className="font-semibold">FluentIELTS</span>
+          <div className="h-8 w-8 rounded bg-primary-600"></div>
+          <span className="font-display font-semibold">FluentIELTS</span>
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {nav.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm text-gray-700 hover:text-indigo-600">
+            <a key={item.name} href={item.href} className="text-sm text-gray-700 hover:text-primary-600">
               {item.name}
             </a>
           ))}
-          <a href="#hero" className="inline-flex items-center rounded-md bg-indigo-600 px-4 py-2 text-sm text-white hover:bg-indigo-700">
+          <a href="#hero" className="inline-flex items-center rounded-md bg-primary-600 px-4 py-2 text-sm text-white hover:bg-primary-700">
             Book Free Demo
           </a>
         </nav>
@@ -34,11 +34,11 @@ export default function Navbar() {
         <div className="md:hidden border-t border-gray-100">
           <Container className="py-3 flex flex-col gap-2">
             {nav.map((item) => (
-              <a key={item.name} href={item.href} onClick={() => setOpen(false)} className="py-2 text-gray-700 hover:text-indigo-600">
+              <a key={item.name} href={item.href} onClick={() => setOpen(false)} className="py-2 text-gray-700 hover:text-primary-600">
                 {item.name}
               </a>
             ))}
-            <a href="#hero" className="inline-flex items-center justify-center rounded-md bg-indigo-600 px-4 py-2 text-sm text-white hover:bg-indigo-700">
+            <a href="#hero" className="inline-flex items-center justify-center rounded-md bg-primary-600 px-4 py-2 text-sm text-white hover:bg-primary-700">
               Book Free Demo
             </a>
           </Container>

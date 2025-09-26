@@ -6,7 +6,7 @@ export default function TestimonialCard({ quote, name, score, avatar }) {
           {avatar ? <img src={avatar} alt={`${name} avatar`} className="h-full w-full object-cover" /> : null}
         </div>
         <div>
-          <p className="font-medium">{name}</p>
+          <p className="font-display font-medium">{name}</p>
           <p className="text-xs text-gray-500">Band {score}</p>
         </div>
       </div>
